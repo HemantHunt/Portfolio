@@ -184,7 +184,6 @@ h3 {
     width: 300px;
     transform: rotateY(-10deg);
     background: rgba( 255, 255, 255, 0.05 );
-    box-shadow: 0 8px 32px 0 rgba( 33, 74, 6, 0.37 );
     backdrop-filter: blur( 3.0px );
     -webkit-backdrop-filter: blur( 3.0px );
     border-radius: 10px;
