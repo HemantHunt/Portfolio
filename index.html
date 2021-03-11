@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="inner_header">
+            <div class="logo">
+                
+            </div>
+
+            <ul class="nav">
+                <li> 
+                    <a href="#home"> <span id="slash">/</span>Home </a>
+                </li>
+                <li> 
+                    <a href="#about"> <span id="slash">/</span>About </a>
+                </li>
+                <li> 
+                    <a href="#work"> <span id="slash">/</span>Work </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <div id="home">
+        <div class="name"> 
+            <p>I'm</p>
+            <h1 class="firstName">Hemant</h1>
+            <h1 class="lastName">Bora</h1>
+            
+            <div class="mainTag">
+                <h3>Full-Stack Developer</h3>
+                <p>Specializing in backend technologies. 
+                   <br> JS, Node JS, REST API,Python,PHP,Wordpress
+                </p>
+            </div>
+            <button class="btn1">Get me!</button>
+            <div class="imgContainer">
+                <img id="mainImg" src="whitecar.jpg" alt="profilePic">
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Me -->
+    <section>
+        <div id="about">
+        <h1>About Me</h1>
+        <p>Hi! My name is Hemant Bora. I'm a Web/Software Developer, having work experince 4+ years. <br>
+             My main work includes developing automated design systems using technologies such as 
+            JavaScript, Python, PHP, etc. <br> I have experince working on various frameworks like Wordpress, Bootstrap, Tailwind, NodeJS, ReactJS, etc. <br>
+            My working station includes code editors such as VS Code, Android Studio, IntelliJ.
+            <br> Primarily I use Windows OS for development. I'm familier with technologies like Git, Netlify, Studio.io and Adobe Creative Cloud.
+        </aside> </p>
+    </div>
+    </section>
+    
+    <!-- Projects/Works -->
+    <section class="work">
+        <div class="container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="whitecar.jpg" alt="Red">
+                </div>
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>Card One</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt repudiandae quasi ab quas veritatis deserunt 
+                        suscipit facilis commodi natus quia.
+                    </P>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                 <div class="imgBox">
+                    <img src="redcar.jpg" alt="Red">
+                </div>
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>Card Two</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt repudiandae quasi ab quas veritatis deserunt 
+                        suscipit facilis commodi natus quia.
+                    </P>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                 <div class="imgBox">
+                    <img src="bluecar.jpg" alt="Red">
+                </div>
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>Card Three</h3>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Incidunt repudiandae quasi ab quas veritatis deserunt 
+                        suscipit facilis commodi natus quia.
+                    </P>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p> ____hunterheman@gmail.com </p>
+    </footer>
+    
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+	});
+    </script>
+
+</body>
+</html>
