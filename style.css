@@ -158,19 +158,6 @@ h3 {
     width: 300px;
 
 }
-.imgContainer::before {
-    content: '';
-    position: absolute;
-    background: #9DC88D; 
-    top: 90px;
-    left: 30px;
-    right: -5px;
-    bottom: 0;
-    height: 70%;
-    width: 80%; 
-    z-index: -2;
-    
-}
 #mainImg {
     position: absolute;
     top: 10px;
