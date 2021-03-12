@@ -20,7 +20,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: block;
     background-color: #06222E;
     z-index: 2;
@@ -75,23 +75,29 @@ header {
 /* Span */
 #home {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
 }
 .name {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    top: 150px;
-    height: 100vh;
     color: #ffffff;
-    margin-left: 150px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    height: 300px;
+    width: 400px;
+    margin: 40px;
 }
 .firstName {
     position: relative;
     width: 200px;
     height: 20px;
-    
 }
 .firstName::before {
     content: '';
@@ -126,6 +132,7 @@ header {
 .mainTag {
     position: relative;
     margin-top: 50px;
+    font-size: 2rem;
 }
 
 h3 {
@@ -134,16 +141,14 @@ h3 {
 }
 /*-- CTA button --*/
 .btn1 {
-    position: relative;
-    margin: 100px;
-    height: 50px;
-    width: 120px;
     color: #06222E;
     background: #9DC88D;
     border: none;
     border-radius: 15px;
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 2px 7px;
 }
 .btn1:hover {
     transform: scale(1.1,1.1);
@@ -151,19 +156,26 @@ h3 {
 }
 .imgContainer {
     position: relative;
-    float: right;
-    top: 150px;
-    left: 200px;
-    height: 400px;
-    width: 300px;
-
+    overflow: hidden;
+    height: 100%;
+    margin: 40px;
 }
-#mainImg {
+/* .imgContainer::before {
+    content: '';
     position: absolute;
-    top: 10px;
-    height: 390px;
-    width: 300px;
-    transform: rotateY(-10deg);
+    background: #9DC88D; 
+    top: 90px;
+    left: 30px;
+    right: -5px;
+    bottom: 0;
+    height: 70%;
+    width: 80%; 
+    z-index: -2; 
+} */
+#mainImg {
+    position: relative;
+    top: 20px;
+    width: 400px;
     background: rgba( 255, 255, 255, 0.05 );
     backdrop-filter: blur( 3.0px );
     -webkit-backdrop-filter: blur( 3.0px );
@@ -172,7 +184,6 @@ h3 {
 #mainImg:hover {
     transform: scale(1.1,1.1);
     background: none;
-    box-shadow: none;
     transition: all 1s ease-in;
 }
 
@@ -183,14 +194,14 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     bottom: 0;
-    height: 90px;
+    height: 50px;
     width: 100%;
     color: #FFFD9E;
     background-color: #06222E;
     z-index: 2;
 }
 footer p {
-    margin-right: 40px;
+    margin-right: 70px;
     padding-right: 40px;
     font-size: 1rem;
 }
@@ -270,8 +281,6 @@ footer p {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 img {
-    position: relative;
-    left: 90px;
     height: 400px;
 }
 .container .card .imgBox {
@@ -288,13 +297,30 @@ img {
 
 /* About Me page    */
 #about {
-    margin-left: 250px;
-    height: 100vh;
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
     font-size: 2rem;
     color: #fff;
 }
-#about h1 {
-    margin-bottom: 40px;
-    color: #FFFD9E;
+.about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
 }
+.about h1 {
+    color: #F1B24A;
+    margin-bottom: 20px;
+}
+.about p {
+    
+}
+
+/*
+    Mobile 
+*/
